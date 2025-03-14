@@ -19,37 +19,35 @@ export default function Application() {
     {
       label: "MarketPlace",
       href: "#",
-      icon: (
-        <IconBuildingStore className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      icon: <IconBuildingStore className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+
     },
     {
       label: "Portfolios",
       href: "#",
-      icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      icon: 
+        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
     },
     {
       label: "Collab.AI",
       href: "#",
-      icon: (
+      icon: 
         <IconAffiliate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      ,
     },
     {
       label: "Domain.AI",
       href: "#",
-      icon: (
+      icon: 
         <IconMessageChatbot className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      ,
     },
     {
       label: "Freelance",
       href: "#",
-      icon: (
+      icon: 
         <IconBriefcase className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
+      ,
     },
   ];
 
@@ -100,8 +98,12 @@ export default function Application() {
     </div>
   );
 }
+interface DashboardProps {
+  selectedSection: string;
+}
 
-const Dashboard = ({ selectedSection }) => {
+
+const Dashboard: React.FC<DashboardProps> = ({ selectedSection }) => {
   return (
     <div className="flex flex-1">
       <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
