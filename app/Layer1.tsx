@@ -1,5 +1,4 @@
 "use client";
-import { useScroll, useTransform } from "framer-motion";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Image from 'next/image';
@@ -44,7 +43,7 @@ export function Layer1() {
                 Our Domain AI, powered by Llama 3.1, provides you with tailored technology recommendations, frameworks, and tools based on the project you describe.
               </p>
               <p className="text-white White:text-White text-sm md:text-base  pt-3 pb-[40px]">
-                Whether you're building from scratch or refining an existing idea, Domain AI guides you with precise insights to help you choose the right tech stack for your unique needs, ensuring efficient and successful project development.
+                Whether you'youre building from scratch or refining an existing idea, Domain AI guides you with precise insights to help you choose the right tech stack for your unique needs, ensuring efficient and successful project development.
               </p>
               <button className="p-[3px] relative sm:ml-[20rem]">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
