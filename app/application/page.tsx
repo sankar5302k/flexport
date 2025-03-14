@@ -20,37 +20,34 @@ export default function Application() {
       label: "MarketPlace",
       href: "#",
       icon: <IconBuildingStore className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
-
+      onClick: () => setSelectedSection("MarketPlace"), // Moved inside link object
     },
     {
       label: "Portfolios",
       href: "#",
-      icon: 
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      icon: <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      onClick: () => setSelectedSection("Portfolios"),
     },
     {
       label: "Collab.AI",
       href: "#",
-      icon: 
-        <IconAffiliate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ,
+      icon: <IconAffiliate className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      onClick: () => setSelectedSection("Collab.AI"),
     },
     {
       label: "Domain.AI",
       href: "#",
-      icon: 
-        <IconMessageChatbot className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ,
+      icon: <IconMessageChatbot className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      onClick: () => setSelectedSection("Domain.AI"),
     },
     {
       label: "Freelance",
       href: "#",
-      icon: 
-        <IconBriefcase className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ,
+      icon: <IconBriefcase className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+      onClick: () => setSelectedSection("Freelance"),
     },
   ];
-
+  
   const [open, setOpen] = useState(false);
   const [selectedSection, setSelectedSection] = useState("MarketPlace"); // Track selected section
 
@@ -66,14 +63,11 @@ export default function Application() {
           <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
             <Logo />
             <div className="mt-8 flex flex-col gap-2">
-              {links.map((link, idx) => (
-                <SidebarLink
-                  key={idx}
-                  link={link}
-                  onClick={() => setSelectedSection(link.label)} // Update selected section
-                />
-              ))}
-            </div>
+  {links.map((link, idx) => (
+    <SidebarLink key={idx} link={link} className="cursor-pointer" />
+  ))}
+</div>
+
           </div>
           <div>
             <SidebarLink
