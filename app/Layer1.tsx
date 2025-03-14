@@ -42,9 +42,9 @@ export function Layer1() {
               <p className="text-white White:text-White text-sm md:text-base  pt-5 pb-[40px]">
                 Our Domain AI, powered by Llama 3.1, provides you with tailored technology recommendations, frameworks, and tools based on the project you describe.
               </p>
-              <p className="text-white White:text-White text-sm md:text-base  pt-3 pb-[40px]">
-                Whether you'youre building from scratch or refining an existing idea, Domain AI guides you with precise insights to help you choose the right tech stack for your unique needs, ensuring efficient and successful project development.
-              </p>
+              <p className="text-white White:text-White text-sm md:text-base pt-3 pb-[40px]">
+  {`Whether you're building from scratch or refining an existing idea, Domain AI guides you with precise insights to help you choose the right tech stack for your unique needs, ensuring efficient and successful project development.`}
+</p>
               <button className="p-[3px] relative sm:ml-[20rem]">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                 <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
@@ -78,9 +78,10 @@ export function Layer1() {
               <p className="text-white White:text-White text-sm md:text-base  pt-5 pb-[40px]">
                 Collab AI helps you find the right experts to collaborate on any technology your project needs.
               </p>
-              <p className="text-white White:text-White text-sm md:text-base  pt-3 pb-[40px]">
-                It matches you with professionals proficient in the exact technology you're struggling with, and even supports collaboration in your native language.
-              </p>
+              <p className="text-white White:text-White text-sm md:text-base pt-3 pb-[40px]">
+  {`It matches you with professionals proficient in the exact technology you're struggling with, and even supports collaboration in your native language.`}
+</p>
+
               <button className="p-[3px] relative sm:ml-[20rem]">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                 <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">

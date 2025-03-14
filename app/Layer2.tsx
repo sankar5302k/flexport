@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform } from "framer-motion";
+
 import React, { useEffect, useId, useRef, useState } from "react";
 import Image from 'next/image';
 import { FlipWords } from "../components/ui/flip-words";
@@ -45,7 +45,7 @@ export function Layer2() {
           </div>
         </div>
         <div className="flex justify-center items-center p-4 mb-10 ">
-  <div className="w-full max-w-4xl"> {/* Container for responsive width */}
+  <div className="w-full max-w-4xl">
     <Compare
       firstImage="/linked.jpeg"
       secondImage="port.jpeg"
@@ -65,7 +65,7 @@ export function Layer2() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/50 h-full w-full z-10" // Dark overlay for the modal
+      className="fixed inset-0 bg-black/50 h-full w-full z-10"
     />
   )}
 </AnimatePresence>
@@ -113,13 +113,13 @@ export function Layer2() {
             <div>
               <motion.h3
                 layoutId={`title-${active.title}-${id}`}
-                className="font-bold text-white" // Dark text for title
+                className="font-bold text-white"
               >
                 {active.title}
               </motion.h3>
               <motion.p
                 layoutId={`description-${active.description}-${id}`}
-                className="text-neutral-400" // Dark text for description
+                className="text-neutral-400"
               >
                 {active.description}
               </motion.p>
