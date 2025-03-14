@@ -1,10 +1,10 @@
 import Image from "next/image"; 
 import React from "react";
-import { NavbarDemo } from "./NavbarDemo.tsx";
-import { Intro1 } from "./Intro1.tsx";
-import { Layer1 } from "./Layer1.tsx";
-import { Layer2 } from "./Layer2.tsx";
-import { Layer3 } from "./Layer3.tsx";
+import { NavbarDemo } from "./NavbarDemo";
+import { Intro1 } from "./Intro1";
+import { Layer1 } from "./Layer1";
+import { Layer2 } from "./Layer2";
+import { Layer3 } from "./Layer3";
 import Link from 'next/link';
 
 export default function Home() {
