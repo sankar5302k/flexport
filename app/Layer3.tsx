@@ -97,7 +97,7 @@ export function Layer3() {
       }: {
         title: string;
         description: string;
-        icon: React.ReactNode;
+        icon?: React.ReactNode;
         index: number;
       }) => {
         return (
